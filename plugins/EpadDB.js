@@ -13700,7 +13700,7 @@ async function epaddb(fastify, options, done) {
               { transaction: t }
             );
             fastify.log.warn('Lite project is created');
-
+            /**
             // fill in each project relation table
             // 1. project_aim
             // get aims from couch and add entities
@@ -13816,7 +13816,7 @@ async function epaddb(fastify, options, done) {
             // 15. events
             // 16. remote_pac_query
             // 17. user_flaggedimage
-
+            */
             await t.commit();
             resolve('Data moved to thick model');
           } catch (err) {
